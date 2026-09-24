@@ -2,13 +2,13 @@ name: Do a Duolingo lesson
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
     inputs:
       lessons:
         default: 25
         description: 'Number of lessons to be completed'
-        required: false
+        required: true
         type: number
 
 jobs:
